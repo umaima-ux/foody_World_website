@@ -1,0 +1,487 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar (Fixed above the hero image) */
+nav {
+    background-color: #333;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    padding: 14px 20px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+nav ul li:hover {
+    background-color: #575757;
+}
+
+/* Dropdown for Navbar */
+nav ul li .dropdown {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
+    top: 100%; /* Place the dropdown just below the parent li */
+}
+
+nav ul li:hover .dropdown {
+    display: block;
+}
+
+nav ul li .dropdown li {
+    float: none;
+}
+
+nav ul li .dropdown li a {
+    padding: 12px 16px;
+    text-align: left;
+}
+
+/* Hero Section with Background Image */
+.hero {
+    background-image: url('https://static.vecteezy.com/system/resources/previews/027/230/186/non_2x/fast-food-and-drinks-on-a-table-with-a-hamburger-fries-chicken-and-soda-ai-generated-free-photo.jpg');
+    height: 500px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-top: 120px; /* Adjusted for space between navbar and hero */
+}
+
+.hero h1 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Search Bar (Above the Hero) */
+.search-bar {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    position: fixed;
+    top: 50px; /* Placed below the navbar */
+    width: 100%;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+}
+
+.search-bar input {
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #333;
+}
+
+.search-bar button {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #575757;
+}
+
+/* About Section */
+.about {
+    display: flex;
+    padding: 20px;
+}
+
+.about-left img {
+    width: 590px;
+    height: auto;
+}
+
+.about-right {
+    padding: 20px;
+}
+
+.about-right h2 {
+    font-size: 2rem;
+}
+
+.about-right button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.about-right button:hover {
+    background-color: #575757;
+}
+
+.button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+/* Cards Section */
+/* Card Container */
+.cards {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+/* Individual Card */
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Card Image */
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Card Content */
+.card-content {
+    padding: 15px;
+}
+
+.card-content h3 {
+    margin: 0;
+    padding: 15px 0;
+}
+
+.card-content p {
+    color: #555;
+    font-size: 14px;
+}
+
+/* Link Button */
+.card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #ff6347; /* Tomato color for the button */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.card a:hover {
+    background-color: #e5533f;
+}
+
+/* Footer styles */
+footer {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.contact-image {
+    width: 500px;
+    height: 250;
+    margin-right: 20px;
+}
+
+.form {
+    max-width: 500px;
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #ff5722;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e64a19;
+}
+
+/* Customer section styles */
+
+/* Social media links */
+.social-media {
+    margin: 20px 0;
+}
+
+.social-media a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.social-media a:hover {
+    text-decoration: underline;
+}
+
+/* Copyright notice */
+.copyright {
+    font-size: 14px;
+    color: #888;
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Top left image section */
+.top-left {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    padding: 20px;
+}
+
+/* Top left image styling */
+.top-left img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px; /* Adjust size */
+    height: auto;
+    z-index: -1;
+}
+
+/* Text overlay for the top-left section */
+.text-overlay {
+    position: relative;
+    z-index: 1;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Bottom right image section */
+.bottom-right {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 50vh;
+    padding: 20px;
+}
+
+/* Text on the left side of the image */
+.left-text {
+    flex-grow: 1;
+    padding-right: 20px;
+    text-align: left;
+}
+
+.bottom-right img {
+    position: relative;
+    width: 300px; /* Adjust size */
+    height: auto;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-container img {
+    width: 30%;
+}
+ /* Customer Section Styles */
+.customer-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.customer-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Width of the card */
+    height: 250px; /* Height of the card */
+    overflow: hidden;
+    text-align: center;
+    margin: 10px;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.customer-card:hover {
+    transform: scale(1.05);
+}
+
+/* Card Image */
+.customer-card img {
+    width: 100%;
+    height: 150px; /* Height of the card image */
+    object-fit: cover;
+}
+
+/* Card Content */
+.customer-card-content {
+    padding: 15px;
+}
+
+.customer-card-content h3 {
+    margin: 0;
+    padding: 10px 0;
+}
+
+.customer-card-content p {
+    color: #555;
+    font-size: 14px;
+}
+
+
+
+
+        /* Basic styles for the navbar */
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        .navbar a {
+            float: left;
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover, .dropdown:hover .dropbtn {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* The dropdown container */
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        /* Dropdown button */
+        .dropdown .dropbtn {
+            font-size: 16px;  
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
+        /* Dropdown content (hidden by default) */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        /* Links inside the dropdown */
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        /* Add a grey background color to dropdown links on hover */
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        /* Show the dropdown menu on hover */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    
